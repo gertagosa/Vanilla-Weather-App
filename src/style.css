@@ -62,3 +62,10 @@ li:first-letter {
   font-size: 16px;
   top: -32px;
 }
+.weather.temerature .active {
+  color: rgb(32, 33, 36);
+  cursor: default;
+}
+.weather.temerature .active:hover {
+  text-decoration: none;
+}
