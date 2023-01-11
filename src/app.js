@@ -66,11 +66,10 @@ function displayForecast(response) {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
-
 function getForecast(coordinates) {
-  let apiKey = "a31dde0e539d207fa7c5a5683fa4b601";
+  let apiKey = "ed238469f9b5e9d801834270e65449bc";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(displayForecast);
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayTemperature(response) {
